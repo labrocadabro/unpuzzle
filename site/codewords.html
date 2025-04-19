@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codewords Helper</title>
+</head>
+<body>
+  <h1>Codewords Helper</h1>
+  <p>Codewords (or sometimes codecrackers) are a type of word puzzle that looks like a crossword without clues. Each cell contains a number that corresponds to a single letter of the alphabet and all 26 letters are used. The goal is to fill the entire grid with valid words.</p>
+  <p>This tool helps you find word possibilities based on word length and known letters. To use this tool, enter any known letters, separated by numbers representing the number of empty cells between those letter.</p>
+  <P>For example: If you are looking for a 3 letter word that begins with C and ends with T, enter <strong>c1t</strong>. If you are looking for a 5 letter word where the first and fourth letters are T, enter <strong>t2t1</strong>. </p>
+  <form id="codeword-form">
+    <label for="codeword">Enter your codeword information:</label><br>
+    <input id="codeword" type="text" /><br>
+    <button type="submit" id="submit-codeword">Submit</button>
+  </form>
+
+  <div id="word-list"></div>
+
+  <script src="codewords.js"></script>
+
+</body>
+</html>
